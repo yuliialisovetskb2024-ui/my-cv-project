@@ -1,0 +1,100 @@
+/* 1. Налаштування фону та шрифтів */
+body {
+    font-family: 'Segoe UI', Helvetica, Arial, sans-serif;
+    background-color: #f0f2f5; /* Світло-сірий нейтральний фон */
+    color: #333;
+    margin: 0;
+    padding: 40px 0;
+    display: flex;
+    justify-content: center;
+}
+
+/* 2. Основний контейнер (Box Model) */
+.main-container {
+    background-color: #ffffff;
+    width: 85%;
+    max-width: 900px;
+    padding: 40px;
+    border-radius: 4px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Легка тінь */
+    border-top: 10px solid #2c3e50; /* Темно-синя акцентна смуга */
+}
+
+/* 3. Оформлення заголовків */
+h1 {
+    color: #2c3e50;
+    font-size: 28px;
+    margin-bottom: 5px;
+    text-transform: uppercase;
+}
+
+h2 {
+    color: #2980b9; /* Блакитний колір для розділів */
+    border-bottom: 2px solid #e1e4e8;
+    padding-bottom: 5px;
+    margin-top: 30px;
+    font-variant: small-caps;
+}
+
+/* 4. Контакти в шапці */
+header p {
+    font-size: 14px;
+    color: #666;
+    line-height: 1.6;
+}
+
+header a {
+    color: #3498db;
+    text-decoration: none;
+}
+
+/* 5. Стилізація таблиці (як у прикладах) */
+table {
+    width: 100%;
+    border-collapse: collapse; /* Важливо: прибирає подвійні лінії */
+    margin-top: 15px;
+}
+
+th {
+    background-color: #f8f9fa;
+    color: #2c3e50;
+    font-weight: bold;
+    text-align: left;
+    border: 1px solid #dee2e6;
+    padding: 12px;
+}
+
+td {
+    border: 1px solid #dee2e6;
+    padding: 12px;
+    vertical-align: top;
+}
+
+/* Виділення парних рядків для зручності */
+tr:nth-child(even) {
+    background-color: #fdfdfd;
+}
+
+/* 6. Списки навичок */
+ul {
+    padding-left: 20px;
+}
+
+li {
+    margin-bottom: 8px;
+}
+
+/* 7. Псевдоклас :hover (для інтерактивності) */
+section:hover {
+    background-color: #fafafa;
+    transition: background 0.3s ease;
+}
+
+/* 8. Підвал */
+footer {
+    text-align: center;
+    margin-top: 30px;
+    padding-top: 15px;
+    border-top: 1px solid #eee;
+    color: #999;
+}

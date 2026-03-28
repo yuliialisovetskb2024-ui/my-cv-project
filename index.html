@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Резюме — Лісовець Юлія</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <div class="main-container">
+        <header>
+            <div style="display: flex; justify-content: space-between; align-items: center;">
+                <h1>Лісовець Юлія</h1>
+                <button id="theme-toggle" style="padding: 8px 12px; cursor: pointer; border-radius: 4px; border: 1px solid #2c3e50; background: #fff; font-weight: bold;">🌓 Тема</button>
+            </div>
+            <p>
+                <b>Дата народження:</b> 14.04.2007 <br>
+                <b>Місто:</b> Львів <br>
+                <b>Email:</b> <a href="mailto:yuliia.lisovets.kb.2024@lpnu.ua">yuliia.lisovets.kb.2024@lpnu.ua</a>
+            </p>
+        </header>
+
+        <section>
+            <h2>Освіта</h2>
+            <p>
+                <strong>Національний університет "Львівська політехніка"</strong><br>
+                Спеціальність: Кібербезпека, 2 курс<br>
+                <i>Посада: Староста академічної групи</i>
+            </p>
+        </section>
+
+        <section>
+            <h2>Технічні навички</h2>
+            <ul>
+                <li><b>Мови програмування:</b> Python, C#</li>
+                <li><b>Робота з даними:</b> MySQL (впевнене володіння), проектування баз даних</li>
+                <li><b>Інструменти:</b> Git (базові навички), робота з великими масивами даних</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>Досвід роботи</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Період</th>
+                        <th>Компанія / Проєкт</th>
+                        <th>Посада та обов'язки</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Червень 2025 — теперішній час</td>
+                        <td>Антишкола</td>
+                        <td>
+                            <b>Менеджер пробних занять</b><br>
+                            Робота з клієнтами, менеджмент процесів та аналіз даних.
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <section id="comments-section">
+            <h2>Відгуки роботодавців</h2>
+            <div id="comments-container" style="font-style: italic; color: #555;">Завантаження відгуків із сервера...</div>
+        </section>
+
+        <section>
+            <h2>Додаткова інформація</h2>
+            <p>Маю розвинені комунікативні навички завдяки роботі менеджером та досвіду управління групою в університеті. Цікавлюся розвитком у сфері кібербезпеки та аналітики даних.</p>
+        </section>
+
+        <footer>
+            <p><small>Створено в рамках Лабораторних робіт з вебпрограмування.</small></p>
+            <div id="storage-info" style="margin-top: 15px; font-size: 11px; color: #666; border-top: 1px dashed #ccc; padding-top: 10px;"></div>
+        </footer>
+    </div>
+
+    <div id="modalForm" style="display:none; position:fixed; top:50%; left:50%; transform:translate(-50%, -50%); background:white; padding:30px; border-radius:8px; border:2px solid #2c3e50; z-index:1000; box-shadow: 0 0 40px rgba(0,0,0,0.4); width: 320px;">
+        <h3 style="margin-top:0; color: #2c3e50;">Зворотний зв'язок</h3>
+        <p style="font-size: 12px; color: #666;">Ви на сайті вже більше хвилини. Бажаєте залишити відгук?</p>
+        
+        <form action="https://formspree.io/f/mpqygkdn" method="POST">
+            <input type="text" name="name" placeholder="Ваше ім'я" required style="width:100%; margin-bottom:10px; padding:8px; box-sizing: border-box;"><br>
+            <input type="email" name="email" placeholder="Ваш Email" required style="width:100%; margin-bottom:10px; padding:8px; box-sizing: border-box;"><br>
+            <input type="tel" name="phone" placeholder="Номер телефону" style="width:100%; margin-bottom:10px; padding:8px; box-sizing: border-box;"><br>
+            <textarea name="message" placeholder="Ваше повідомлення" required style="width:100%; margin-bottom:15px; padding:8px; box-sizing: border-box; height: 80px;"></textarea><br>
+            
+            <div style="display: flex; gap: 10px;">
+                <button type="submit" style="background:#2c3e50; color:white; border:none; padding:10px; cursor:pointer; flex: 1; border-radius: 4px;">Відправити</button>
+                <button type="button" onclick="document.getElementById('modalForm').style.display='none'; document.getElementById('modalOverlay').style.display='none';" style="background:#eee; border:none; padding:10px; cursor:pointer; flex: 1; border-radius: 4px;">Закрити</button>
+            </div>
+        </form>
+    </div>
+
+    <div id="modalOverlay" style="display:none; position:fixed; top:0; left:0; width:100%; height:100%; background:rgba(0,0,0,0.5); z-index:999;"></div>
+
+    <script src="script.js"></script>
+</body>
+</html>
